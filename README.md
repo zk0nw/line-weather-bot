@@ -15,11 +15,11 @@ json.loads(url.read().decode())
 將氣象局網頁資料解碼，以供調用後傳送至用戶。
 
 ※ 變數`url`為讀取後的氣象局網頁資料。
-### 向 LINE 用戶發送訊息
+### 回覆 LINE 用戶訊息
 ```Python
 line_bot_api.reply_message(reply_token, TextSendMessage(text="日期(開始)：" + start_date + "\n日期(結束)：" + end_date + "\n時間(開始)：" + start_time + "\n時間(結束)：" + end_time + "\n最高溫：" + hot + "°C\n最低溫：" + cold + "°C\n天氣狀態：" + status + "\n感受：" + feel + "\n降雨機率：" + rain + "%"))
 ```
-向 LINE 用戶發送天氣資訊。
+回覆給 LINE 用戶天氣資訊。
 ## 參考資料
 ### LINE 官方文檔
 [https://developers.line.biz/en/reference/messaging-api](https://developers.line.biz/en/reference/messaging-api)
