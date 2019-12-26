@@ -98,7 +98,7 @@ def check_location_name(location_name):
     elif location_name in shan_list:
         return location_name + '縣'
     else:
-        return Fals
+        return False
             
 # 傳送天氣訊息
 def send_weather_info(reply_token, location_name):
