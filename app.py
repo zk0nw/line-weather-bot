@@ -115,8 +115,7 @@ def send_weather_info(reply_token, location_name):
         feel = data['records']['location'][0]['weatherElement'][3]['time'][0]['parameter']['parameterName']
         rain = data['records']['location'][0]['weatherElement'][1]['time'][0]['parameter']['parameterName']
         
-        line_bot_api.reply_message(reply_token, TextSendMessage(text="日期(開始)：" + start_date + "\n日期(結束)：" + end_date + "\n時間(開始)：" + start_time + "\n時間(結束)：" + end_time +
-        "\n最高溫：" + hot + "°C\n最低溫：" + cold + "°C\n天氣狀態：" + status + "\n感受：" + feel + "\n降雨機率：" + rain + "%"))
+        line_bot_api.reply_message(reply_token, TextSendMessage(text="日期(開始)：" + start_date + "\n日期(結束)：" + end_date + "\n時間(開始)：" + start_time + "\n時間(結束)：" + end_time + "\n最高溫：" + hot + "°C\n最低溫：" + cold + "°C\n天氣狀態：" + status + "\n感受：" + feel + "\n降雨機率：" + rain + "%"))
 
 import os
 if __name__ == "__main__":
